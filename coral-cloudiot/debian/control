@@ -1,0 +1,19 @@
+Source: coral-cloudiot
+Maintainer: Coral <coral-support@google.com>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://coral.withgoogle.com/
+
+Package: python3-coral-cloudiot
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-cryptoauthlib,
+         python3-jwt,
+         python3-paho-mqtt,
+         python3-cryptography
+Description: Coral Cloud IoT API
+ API for connected Coral devices to Google Cloud Platform.
+
