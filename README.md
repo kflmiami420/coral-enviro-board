@@ -1,4 +1,4 @@
-
+<h1 class="normal-size print-break section-headline mk-heading">Environmental Sensor Board datasheet</h1>
     <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-profile-dims.jpg" />
   </div>
 </div>
