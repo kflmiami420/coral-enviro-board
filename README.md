@@ -1,3 +1,767 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Environmental Sensor Board datasheet | Coral</title>
+    <meta property="og:title" content="Environmental Sensor Board datasheet | Coral" />
+    <meta name="twitter:text:title" content="Environmental Sensor Board datasheet | Coral" />
+
+    <meta name="description" content="" />
+
+    <meta property="og:description" content="" />
+    <meta name="twitter:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#ff7060" />
+    <meta name="application-name" content="Coral" />
+    <meta property="og:site_name" content="Coral" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:site" content="@coral" /> -->
+    <!-- <meta name="twitter:creator" content="@coral" /> -->
+
+    <meta name="msapplication-TileColor" content="#ff7060" />
+    <meta name="msapplication-square70x70" content="/static/icons/mstile-70x70.png" />
+    <meta name="msapplication-square144x144" content="/static/icons/mstile-144x144.png" />
+    <meta name="msapplication-square150x150" content="/static/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150" content="/static/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310" content="/static/icons/mstile-310x310.png" />
+
+
+    <meta property="og:image" content="/static/images/social-horizontal.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+
+    <meta name="twitter:image" content="/static/images/social-horizontal.png" />
+    <meta name="twitter:image:width" content="1024" />
+    <meta name="twitter:image:height" content="512" />
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
+    <link rel="manifest" href="/static/manifest.json" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ff7060" />
+    <meta name="msapplication-TileImage" content="/static/icons/mstile-144x144.png" />
+    <meta name="theme-color" content="#ff7060"/>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132744748-1"></script>
+
+      <link href="/static/output/main.min.css?cache=1f18228" media="all" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+      /* inlined because the css build does not parse (it breaks) @page pseudo-elements */
+      @media print {
+          @page {
+              margin-left: 0;
+              margin-right: 0;
+          }
+          @page:first {
+              margin-top: 0; /* so we can put the top border on the body */
+              margin-bottom: 20mm; /* very important to offset the removed top (10mm) margin; otherwise, page breaks don't work well later on */
+          }
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <noscript>
+      <style>
+        #header { transform: translate3d(0, 0, 0); }
+        #footer { opacity: 1; }
+        .module-type-header .title, .module-type-header .subhead { opacity: 1; transform: translate3d(0, 0, 0); }
+      </style>
+    </noscript>
+
+
+    <meta name="google-site-verification" content="myueX0o2GcnmU6ZPuhBIw5oCJjuVi7Dykjshg2QkQGQ" />
+  </head>
+
+  <body >
+
+<header id="header" data-turbolinks-permanent>
+	<div class="grid-container">
+		<div class="row center">
+			<nav class="col-mobile-14 col-tablet-30 col-small-desktop-28">
+				<span class="logo-container">
+					<a href="/" data-label="homepage">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233 39">
+<style type="text/css">
+	.st0{fill:#FF5E4D;}
+	.st1{fill:none;stroke:#FF0000;stroke-miterlimit:10;}
+	.st2{fill:#EFB7B4;}
+</style>
+<g>
+	<path class="st0" d="M46,12.9c-7.1,0-12.8,5.7-12.8,12.8S38.9,38.5,46,38.5c7.1,0,12.8-5.7,12.8-12.8S53,12.9,46,12.9z M46,32.5
+		c-3.8,0-6.8-3-6.8-6.8s3-6.8,6.8-6.8c3.8,0,6.8,3,6.8,6.8S49.7,32.5,46,32.5z"/>
+	<circle class="st0" cx="76.7" cy="17.5" r="4.6"/>
+	<rect x="63.2" y="13.5" class="st0" width="6.5" height="24.7"/>
+	<rect x="113" y="2.1" class="st0" width="6.5" height="36.1"/>
+	<path class="st0" d="M95.5,12.9c-7.1,0-12.8,5.7-12.8,12.8c0,7.1,4.5,12.8,11.6,12.8c2.8,0,6.3-1.5,7.8-4.1c0,0.5,0,3.8,0,3.8h6.1
+		c0,0,0-12.5,0-12.6C108.2,18.6,102.6,12.9,95.5,12.9z M95.4,32.5c-3.8,0-6.8-3-6.8-6.8c0-3.8,3-6.8,6.8-6.8s6.8,3,6.8,6.8
+		C102.2,29.5,99.1,32.5,95.4,32.5z"/>
+	<path class="st0" d="M18.9,31.9c-6.5,0-11.7-5.3-11.7-11.7S12.4,8.5,18.9,8.5c3.4,0,6.6,1.5,8.9,4.1l5-4.1C29.2,4.3,24.2,2,18.9,2
+		C8.8,2,0.7,10.2,0.7,20.2s8.2,18.2,18.2,18.2c4.3,0,8.5-1.5,11.7-4.3l-4.2-4.9C24.3,31,21.6,31.9,18.9,31.9z"/>
+</g>
+<g>
+	<path class="st2" d="M138.8,34.4v3.5h-2.9V1h3v16.4c2.2-2.4,5.3-3.7,8.6-3.7c2.9,0,5.6,1,7.5,2.7c2.7,2.3,4.4,5.8,4.4,9.7
+		c0,4.3-1.9,8-5,10.1c-2.3,1.7-4.8,2.2-7.1,2.2C143.6,38.4,140.5,36.8,138.8,34.4z M138.9,30.4c1.9,3.2,5,5.2,8.5,5.2
+		c2,0,3.8-0.7,5.4-1.8c2.3-1.6,3.7-4.5,3.7-7.8c0-3.1-1.2-5.8-3.3-7.5c-1.7-1.4-3.7-2-5.7-2c-4.4,0-7.5,3-8.5,4.8V30.4z"/>
+	<path class="st2" d="M185.2,34.1c-1.8,2.2-5.1,4.4-9.7,4.4c-6.7,0-11.9-5-11.9-12.4c0-6.8,4.6-12.4,11.3-12.4c6.3,0,11,5,11,11.6
+		c0,0.2,0,0.6-0.1,1h-19.3c0.2,5,3.5,9.3,8.9,9.3c3.1,0,5.7-1.2,7.6-3.5L185.2,34.1z M166.7,23.6h16.2c-0.6-4.2-3.8-7.1-8-7.1
+		C170.7,16.5,167.6,19.5,166.7,23.6z"/>
+	<path class="st2" d="M205.2,17h-8.1v13c0,2.1,0.4,3.2,1,4c0.8,1,2.2,1.7,4,1.7c0.7,0,1.7-0.1,2.5-0.3l0.5,2.7
+		c-0.8,0.3-2.1,0.4-3.1,0.4c-2.2,0-4.7-0.7-6.3-2.7c-1-1.3-1.6-3-1.6-5.8V17h-6.7v-2.8h6.7V7.8h3v6.4h8.1V17z"/>
+	<path class="st2" d="M229.2,37.9v-3.5c-1.8,2.4-4.8,4-8.5,4c-2.2,0-4.7-0.6-7.1-2.2c-3.1-2.2-5-5.9-5-10.1c0-4,1.7-7.4,4.4-9.7
+		c2-1.6,4.7-2.7,7.5-2.7c3.4,0,6.6,1.4,8.7,3.8v-3.3h2.9v23.7H229.2z M229.1,21.3c-1-1.8-4.2-4.8-8.5-4.8c-2,0-4.1,0.7-5.7,2
+		c-2.1,1.7-3.3,4.5-3.3,7.5c0,3.3,1.5,6.2,3.7,7.8c1.5,1,3.3,1.8,5.4,1.8c3.5,0,6.6-2,8.5-5.2V21.3z"/>
+</g>
+</svg>					</a>
+				</span>
+
+				<button id="menu-opener" class="menu-opener" aria-label="Open Menu" title="Open Menu" aria-expanded="false" aria-haspopup="true" aria-controls="navigation">
+	        <span></span>
+	        <span class="transformer">
+	        	<span></span>
+	        	<span></span>
+	        </span>
+	        <span></span>
+				</button>
+
+			  <ul class="navigation" id="navigation" role="menu" aria-labelledby="menu-opener">
+		        <li class="nav-item" role="none">
+		        	<a href="/products/" data-label="Products" class="link-header color--black  " role="menuitem">
+		        		Products
+		        	</a>
+		        </li>
+		        <li class="nav-item" role="none">
+		        	<a href="/examples/" data-label="Examples" class="link-header color--black  " role="menuitem">
+		        		Examples
+		        	</a>
+		        </li>
+		        <li class="nav-item" role="none">
+		        	<a href="/docs/" data-label="Docs" class="link-header color--black selected " role="menuitem">
+		        		Docs
+		        	</a>
+		        </li>
+		        <li class="nav-item" role="none">
+		        	<a href="/resources/" data-label="Resources" class="link-header color--black  " role="menuitem">
+		        		Resources
+		        	</a>
+		        </li>
+          <li class="nav-item search-field collapsed">
+            <i class="material-icons icon-search">search</i>
+            <input type="text" placeholder="Search Coral">
+            <i class="material-icons icon-close">close</i>
+          </li>
+		    </ul>
+		   </nav>
+		 </div>
+	</div>
+</header>
+    <main id="content" class="show">
+  <section class="page-wrapper page-tutorial" id="doc">
+    <div class="grid-container">
+      <div class="row">
+          <div class="col-mobile-offset-1 col-mobile-14 col-tablet-offset-1 col-tablet-30 col-small-desktop-offset-2 col-small-desktop-5 col-desktop-offset-2 col-desktop-6">
+
+<aside 
+  data-sticky-nav
+  style="opacity: 0;"
+  class="module side-nav sticky-nav--collapsible"
+data-sticky-nav-collapsible="true"  data-module-type="side-nav">
+  <nav data-sticky-nav-nav class="side-nav__nav">
+    <button data-sticky-nav-toggle class="side-nav__button">Contents</button>
+    <ul data-sticky-nav data-sticky-nav-level="0" class="side-nav__list side-nav--level-0"><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="Dev Board">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="Dev Board" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="Dev Board">Dev Board</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="Dev Board" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/get-started/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/get-started/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/get-started/" title="Get started">Get started</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/datasheet/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/datasheet/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/datasheet/" title="Datasheet">Datasheet</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/camera/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/camera/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/camera/" title="Connect to a camera">Connect to a camera</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/gpio/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/gpio/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/gpio/" title="Connect to the I/O pins">Connect to the I/O pins</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/reflash/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/reflash/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/reflash/" title="Update or flash the dev board">Update or flash the dev board</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/dev-board/mdt/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/dev-board/mdt/" class="side-nav__label side-nav--level-1" href="/docs/dev-board/mdt/" title="Mendel Development Tool">Mendel Development Tool</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="USB Accelerator">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="USB Accelerator" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="USB Accelerator">USB Accelerator</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="USB Accelerator" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/accelerator/get-started/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/accelerator/get-started/" class="side-nav__label side-nav--level-1" href="/docs/accelerator/get-started/" title="Get started">Get started</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/accelerator/datasheet/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/accelerator/datasheet/" class="side-nav__label side-nav--level-1" href="/docs/accelerator/datasheet/" title="Datasheet">Datasheet</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="SoM">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="SoM" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="SoM">SoM</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="SoM" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/som/datasheet/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/som/datasheet/" class="side-nav__label side-nav--level-1" href="/docs/som/datasheet/" title="Datasheet">Datasheet</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="Camera">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="Camera" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="Camera">Camera</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="Camera" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/camera/datasheet/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/camera/datasheet/" class="side-nav__label side-nav--level-1" href="/docs/camera/datasheet/" title="Datasheet">Datasheet</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="Environmental Sensor">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="Environmental Sensor" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="Environmental Sensor">Environmental Sensor</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="Environmental Sensor" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/enviro-board/get-started/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/enviro-board/get-started/" class="side-nav__label side-nav--level-1" href="/docs/enviro-board/get-started/" title="Get started">Get started</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/enviro-board/datasheet/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/enviro-board/datasheet/" class="side-nav__label side-nav--level-1" href="/docs/enviro-board/datasheet/" title="Datasheet">Datasheet</a><ul data-sticky-nav-list data-sticky-nav-level="2" data-sticky-nav-for="/docs/enviro-board/datasheet/" class="side-nav__list side-nav--level-2"><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#overview">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#overview" class="side-nav__label side-nav--level-2" href="#overview" title="Overview">Overview</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#table-of-contents">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#table-of-contents" class="side-nav__label side-nav--level-2" href="#table-of-contents" title="Table of contents">Table of contents</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#dimensions">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#dimensions" class="side-nav__label side-nav--level-2" href="#dimensions" title="Dimensions">Dimensions</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#requirements">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#requirements" class="side-nav__label side-nav--level-2" href="#requirements" title="Requirements">Requirements</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#sensors">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#sensors" class="side-nav__label side-nav--level-2" href="#sensors" title="Sensors">Sensors</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#grove-connectors">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#grove-connectors" class="side-nav__label side-nav--level-2" href="#grove-connectors" title="Grove connectors">Grove connectors</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#oled-display">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#oled-display" class="side-nav__label side-nav--level-2" href="#oled-display" title="OLED display">OLED display</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#secure-cryptoprocessor">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#secure-cryptoprocessor" class="side-nav__label side-nav--level-2" href="#secure-cryptoprocessor" title="Secure cryptoprocessor">Secure cryptoprocessor</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#header-pinout">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#header-pinout" class="side-nav__label side-nav--level-2" href="#header-pinout" title="Header pinout">Header pinout</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#i2c-address-reference">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#i2c-address-reference" class="side-nav__label side-nav--level-2" href="#i2c-address-reference" title="I2C address reference">I2C address reference</a></li><li class="side-nav__item side-nav--level-2" data-sticky-nav-for="#certifications">
+                  <a data-sticky-nav-link data-sticky-nav-level="2" data-sticky-nav-for="#certifications" class="side-nav__label side-nav--level-2" href="#certifications" title="Certifications">Certifications</a></li></ul></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/enviro/coral.enviro.board/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/enviro/coral.enviro.board/" class="side-nav__label side-nav--level-1" href="/docs/reference/enviro/coral.enviro.board/" title="coral.enviro.board">coral.enviro.board</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/enviro/coral.cloudiot.core/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/enviro/coral.cloudiot.core/" class="side-nav__label side-nav--level-1" href="/docs/reference/enviro/coral.cloudiot.core/" title="coral.cloudiot.core">coral.cloudiot.core</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="TensorFlow on Edge TPU">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="TensorFlow on Edge TPU" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="TensorFlow on Edge TPU">TensorFlow on Edge TPU</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="TensorFlow on Edge TPU" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/models-intro/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/models-intro/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/models-intro/" title="Overview">Overview</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/compiler/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/compiler/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/compiler/" title="Edge TPU Compiler">Edge TPU Compiler</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/multiple-edgetpu/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/multiple-edgetpu/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/multiple-edgetpu/" title="Run multiple models with multiple Edge TPUs">Run multiple models with multiple Edge TPUs</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/retrain-classification/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/retrain-classification/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/retrain-classification/" title="Retrain an image classification model">Retrain an image classification model</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/retrain-detection/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/retrain-detection/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/retrain-detection/" title="Retrain an object detection model">Retrain an object detection model</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/retrain-classification-ondevice/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/retrain-classification-ondevice/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/retrain-classification-ondevice/" title="Retrain a classification model on-device with weight imprinting">Retrain a classification model on-device with weight imprinting</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/retrain-classification-ondevice-backprop/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/retrain-classification-ondevice-backprop/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/retrain-classification-ondevice-backprop/" title="Retrain a classification model on-device with backpropagation">Retrain a classification model on-device with backpropagation</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/benchmarks/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/benchmarks/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/benchmarks/" title="Performance benchmarks">Performance benchmarks</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/faq/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/faq/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/faq/" title="Frequently asked questions">Frequently asked questions</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="Python API">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="Python API" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="Python API">Python API</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="Python API" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/api-intro/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/api-intro/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/api-intro/" title="Overview">Overview</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.basic.basic_engine/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.basic.basic_engine/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.basic.basic_engine/" title="edgetpu.basic.basic_engine">edgetpu.basic.basic_engine</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.basic.edgetpu_utils/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.basic.edgetpu_utils/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.basic.edgetpu_utils/" title="edgetpu.basic.edgetpu_utils">edgetpu.basic.edgetpu_utils</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.classification.engine/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.classification.engine/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.classification.engine/" title="edgetpu.classification.engine">edgetpu.classification.engine</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.detection.engine/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.detection.engine/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.detection.engine/" title="edgetpu.detection.engine">edgetpu.detection.engine</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.learn.backprop.softmax_regression/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.learn.backprop.softmax_regression/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.learn.backprop.softmax_regression/" title="edgetpu.learn.backprop.softmax_regression">edgetpu.learn.backprop.softmax_regression</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.learn.imprinting.engine/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.learn.imprinting.engine/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.learn.imprinting.engine/" title="edgetpu.learn.imprinting.engine">edgetpu.learn.imprinting.engine</a></li><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/reference/edgetpu.utils.image_processing/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/reference/edgetpu.utils.image_processing/" class="side-nav__label side-nav--level-1" href="/docs/reference/edgetpu.utils.image_processing/" title="edgetpu.utils.image_processing">edgetpu.utils.image_processing</a></li></ul>
+        </li><li class="side-nav__item side-nav--level-0" data-sticky-nav-for="C++ API">
+          <a data-sticky-nav-link data-sticky-nav-level="0" data-sticky-nav-for="C++ API" class="side-nav__label side-nav--level-0 sticky-nav--closed" href="#" title="C++ API">C++ API</a>
+          <ul data-sticky-nav-list data-sticky-nav-level="1" data-sticky-nav-for="C++ API" class="side-nav__list side-nav--level-1 sticky-nav--closed"><li class="side-nav__item side-nav--level-1" data-sticky-nav-for="/docs/edgetpu/api-cpp/">
+              <a data-sticky-nav-link data-sticky-nav-level="1" data-sticky-nav-for="/docs/edgetpu/api-cpp/" class="side-nav__label side-nav--level-1" href="/docs/edgetpu/api-cpp/" title="Overview">Overview</a></li></ul>
+        </li></ul>
+  </nav>
+</aside>          </div>
+        <div class="col-mobile-offset-0 col-mobile-16 col-tablet-offset-0 col-tablet-32 col-small-desktop-offset-9 col-small-desktop-22 col-desktop-offset-1 col-desktop-22">
+
+
+
+
+
+  <header class="module-type-header  " data-module-type="header-text">
+    <div class="grid-container">
+
+      <div class="row">
+        <div class="col-mobile-14 col-mobile-offset-1 col-tablet-28 col-small-desktop-26 col-desktop-32 col-tablet-offset-1 col-small-desktop-offset-2 col-desktop-offset-2 text-align-left">
+          <h1 class="page-headline title">
+            Environmental Sensor Board datasheet
+          </h1>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="module" data-module-type="text">
+  <div class="grid-container">
+    <div class="row">
+      <div class="col-mobile-14 col-mobile-offset-1 col-tablet-30 col-small-desktop-28 col-desktop-28 col-tablet-offset-1 col-small-desktop-offset-2 col-desktop-offset-2 text-align-left module-text-copy">
+        <div class="markdown-container">
+          <style>
+table .mk-list {
+  margin-top: 0;
+}
+
+@media print {
+  h1.page-headline {
+    text-transform: capitalize;
+  }
+}
+</style>
+
+<div class="print-only-header" style="display:none">
+  <span class="subhead body-copy" style="margin-top:260px">Version 1 (March 2019)</span>
+  <div class="column-wrapper" style="width: 50%;">
+    <img src="/static/docs/images/enviro-board/enviro-profile-dims.jpg" />
+  </div>
+</div>
+
+<p class="body-copy mk-paragraph" ><img src="/static/docs/images/enviro-board/enviro-profile-dims.jpg"
+   class="attempt-right print-hide" style="max-width:430px" />
+
+<h2 class="normal-size print-break section-headline mk-heading">Features</h2>
+
+<div class="dense-list">
+<ul class="mk-list">
+<li class="mk-list-item body-copy">128x32 OLED display</li>
+<li class="mk-list-item body-copy">Ambient light sensor (OPT3002)</li>
+<li class="mk-list-item body-copy">Barometric pressure sensor (BMP280)</li>
+<li class="mk-list-item body-copy">Humidity / temperature sensor (HDC2010)</li>
+<li class="mk-list-item body-copy">Cryptoprocessor (ATECC608A) with Google keys</li>
+<li class="mk-list-item body-copy">40-pin GPIO female connector</li>
+<li class="mk-list-item body-copy">Four Grove connectors:
+  <ul class="mk-list">
+  <li class="mk-list-item body-copy">1x UART</li>
+  <li class="mk-list-item body-copy">1x I2C</li>
+  <li class="mk-list-item body-copy">1x PWM</li>
+  <li class="mk-list-item body-copy">1x 3.3/5V analog</li>
+  </ul>
+</li>
+<li class="mk-list-item body-copy">General purpose button</li>
+<li class="mk-list-item body-copy">General purpose LED</li>
+</ul>
+</div>
+
+<h2 class="section-headline mk-heading" id="overview">Overview</h2>
+
+<p class="body-copy mk-paragraph" >The Environmental Sensor Board is an add-on board (also known as a pHAT or bonnet) that adds sensing
+capabilities to your Coral Dev Board or Raspberry Pi projects. (It includes an EEPROM for
+compatibility with Raspberry Pi boards.)</p>
+
+<p class="body-copy mk-paragraph" >The board provides atmospheric data such as light level, barometric pressure, temperature, and
+humidity. You can also attach additional sensors with the Grove connectors.</p>
+
+<p class="body-copy mk-paragraph" >The board also includes a secure cryptoprocessor with Google keys to enable connectivity with
+<a class="mk-link" target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/iot-core/">Google Cloud IoT Core</a> services, allowing you to securely
+connect to the device and then collect, process, and analyze the sensor data.</p>
+
+<div class="print-hide link-arrow">
+<p class="body-copy mk-paragraph" ><a class="mk-link" href="/products/environmental/">Purchase info</a>
+</div>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="table-of-contents">Table of contents</h2>
+
+<div class="dense-list">
+<ul class="mk-list">
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#dimensions">Dimensions</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#requirements">Requirements</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#sensors">Sensors</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#grove-connectors">Grove connectors</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#oled-display">OLED display</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#secure-cryptoprocessor">Secure cryptoprocessor</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#header-pinout">Header pinout</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#i2c-address-reference">I2C address reference</a></li>
+  <li class="mk-list-item body-copy"><a class="mk-link" href="#certifications">Certifications</a></li>
+</ul>
+</div>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="dimensions">Dimensions</h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>Measurement</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Board size</td>
+<td>Board w/ components: 65 x 30 x 18.46 mm<br>
+40-pin header height: 8.5 mm</td>
+</tr>
+<tr>
+<td>Hole size/spacing</td>
+<td>Diameter: 2.4 mm<br>
+Horizontal spacing: 58 mm<br>
+Vertical spacing: 23 mm</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>14 g</td>
+</tr>
+</tbody>
+</table>
+
+<figure>
+   <img src="/static/docs/images/enviro-board/enviro-dims.png" />
+   <figcaption><b>Figure 1.</b> Board and mounting hole dimensions (in millimeters)</figcaption>
+</figure>
+
+<h2 class="section-headline mk-heading" id="requirements">Requirements</h2>
+
+<p class="body-copy mk-paragraph" >The board must be connected to a host with I2C, SPI, and 3.3V power. The 40-pin GPIO header and
+provided software are designed to work with the Coral Dev Board or Raspberry Pi (running Mendel
+Linux or Raspbian, respectively).</p>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="sensors">Sensors</h2>
+
+<p class="body-copy mk-paragraph" >All sensors are connected to the I2C lines from header pins 3 and 5 (see the
+<a class="mk-link" href="#header-pinout">header pinout</a>).</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Sensor</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Humidity and temperature sensor </td>
+<td>Texas Instruments HDC2010:<br>
+<ul class="mk-list">
+<li class="mk-list-item body-copy">Humidity range/accuracy: 0 - 100% ± 2% (typical)</li>
+<li class="mk-list-item body-copy">Temperature range/accuracy: -40 - 125°C (functional) ±0.2°C (typical)</li>
+</ul>
+<br>
+I2C address: 0x40</td>
+</tr>
+<tr>
+<td>Ambient light sensor</td>
+<td>Texas Instruments OPT3002:<br>
+<ul class="mk-list">
+<li class="mk-list-item body-copy">Optical spectrum: 300 - 1000 nm</li>
+<li class="mk-list-item body-copy">Measurement range: 1.2 - 10 mW/cm2</li>
+</ul>
+<br>
+I2C address:  0x45</td>
+</tr>
+<tr>
+<td>Barometric pressure sensor</td>
+<td>Bosch Sensortec BMP280:<br>
+<ul class="mk-list">
+<li class="mk-list-item body-copy">Operation range: 300 - 1100 hPa</li>
+<li class="mk-list-item body-copy">Absolute accuracy (@ 0 - 65°C): ~ ±1 hPa</li>
+<li class="mk-list-item body-copy">Relative accuracy (@ 700-900 hPa; 25 - 40°C): ± 0.12 hPa (typical)</li>
+</ul>
+<br>
+I2C address: 0x76</td>
+</tr>
+</tbody>
+</table>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="grove-connectors">Grove connectors</h2>
+
+<p class="body-copy mk-paragraph" >The Grove connectors provide easy access to the PWM, UART, and I2C pins from the baseboard, plus an
+on-board analog-to-digital converter (ADC), as illustrated in figure 2.</p>
+
+<p class="body-copy mk-paragraph" >To interact with the AIN0 analog source, use address 0x49 on the I2C lines from header pins 3
+and 5 (see the <a class="mk-link" href="#header-pinout">header pinout</a>).</p>
+
+<div class="note"><b>Note:</b>
+The VDD_A pin on the analog Grove connector can be powered by either the 5V or 3.3V power
+rail by the jumper pins indicated in figure 2 as the ANALOG VDD JUMPER.</div>
+
+<figure>
+   <img src="/static/docs/images/enviro-board/enviro-grove-callouts.png" style="max-width:600px" />
+   <figcaption><b>Figure 2.</b> Pin functions for each Grove connector</figcaption>
+</figure>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="oled-display">OLED display</h2>
+
+<p class="body-copy mk-paragraph" >The 128x32 OLED display is driven by the SSD1306 control chip, connected with the SPI interface.</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>SPI function</strong></th>
+<th><strong>Pin</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MOSI  </td>
+<td>19</td>
+</tr>
+<tr>
+<td>MISO</td>
+<td>21</td>
+</tr>
+<tr>
+<td>SCLK</td>
+<td>23</td>
+</tr>
+<tr>
+<td>CL</td>
+<td>24</td>
+</tr>
+<tr>
+<td>RESET</td>
+<td>22</td>
+</tr>
+<tr>
+<td>DC</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+
+<h2 class="section-headline mk-heading" id="secure-cryptoprocessor">Secure cryptoprocessor</h2>
+
+<p class="body-copy mk-paragraph" >The board includes a secure cryptoprocessor (ATECC608A) with an EEPROM that can
+store up to 16 keys (256-bit), certificates, or other data. Although this chip provides a range of
+cryptographic features, it is primarily included to provide secure key generation and management so
+you can securely authenticate with the device when deployed into the field.</p>
+
+<p class="body-copy mk-paragraph" >The factory setting for the Environmental Sensor Board includes one Google key (private key, public
+key, and certificate) to enable communication with <a class="mk-link" target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/iot-core/">Google Cloud IoT
+Core</a> right out of the box. This key slot is reusable, just like
+the rest of the memory, so you don't have to keep it.</p>
+
+<div class="print-break"></div>
+
+<h2 class="section-headline mk-heading" id="header-pinout">Header pinout</h2>
+
+<p class="body-copy mk-paragraph" >Figure 3 shows which pins from the baseboard are used by the Environmental Sensor Board. Pins
+highlighted in dark green are used by the board and not available to you (except through software
+for the corresponding functions), while the pins in light green are used by the board but are still
+available to you through the Grove connectors.</p>
+
+<figure>
+   <img src="/static/docs/images/enviro-board/enviro-pinout.png" style="max-width:600px" />
+   <figcaption><b>Figure 3.</b> Pins used by the board</figcaption>
+</figure>
+
+<h2 class="section-headline mk-heading" id="i2c-address-reference">I2C address reference</h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>Device</strong></th>
+<th><strong>Address</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Humidity/temp sensor  </td>
+<td>0x40</td>
+</tr>
+<tr>
+<td>Ambient light sensor</td>
+<td>0x45</td>
+</tr>
+<tr>
+<td>Barometric pressure sensor</td>
+<td>0x76</td>
+</tr>
+<tr>
+<td>Analog Grove connector</td>
+<td>0x49</td>
+</tr>
+<tr>
+<td>Cryptoprocessor</td>
+<td>0x30</td>
+</tr>
+</tbody>
+</table>
+
+<h2 class="section-headline mk-heading" id="certifications">Certifications</h2>
+
+<table>
+<thead>
+<tr>
+<th><strong>Market</strong></th>
+<th><strong>Certifications</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>USA</strong></td>
+<td>FCC</td>
+</tr>
+<tr>
+<td><strong>European Union</strong></td>
+<td>CE</td>
+</tr>
+</tbody>
+</table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>        </div>
+      </div>
+    </div>
+
+<section class="feedback-component">
+	<div class="grid-container">
+		<div class="row center">
+			<div class="col-mobile-14 col-tablet-30 col-small-desktop-28 col-desktop-28">
+				<hr class="separater" data-module-type="separator" />
+			</div>
+		</div>
+
+		<div class="row feedback-row">
+			<div class="feedback-container col-mobile-14 col-tablet-13 col-small-desktop-12 col-desktop-28">
+				<p class="cta-primary-body">Is this content helpful?</p>
+
+				<div>
+					<button class="thumb thumb-up"><svg width="100%" height="100%" viewBox="0 0 34 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M21.1334,40.0344336 L21.1323966,40.0344256 C15.9572291,39.9899108 13.9114176,39.7127631 10.9459171,38.2588016 C6.72320136,36.1884374 4.7682668,35.8231657 3.40837849,36.2047375 C3.3592638,36.2185186 3.32142401,36.22968 3.29222438,36.2357757 C3.21112527,36.2675855 3.1137127,36.2973032 3.03213342,36.3150799 L2.60662684,36.407801 L2.31517319,36.0842152 C1.4810202,35.1580983 1.02520694,30.2921887 1.36301421,25.7438928 C1.56576937,23.0033161 2.00198174,21.3215689 2.52738106,20.7643136 L2.7932753,20.4822977 L3.17712605,20.5360689 L3.31550715,20.5555326 C4.22302116,20.6960422 4.54235861,20.658501 5.66200204,20.1859414 C6.5663511,19.8023815 7.79240412,18.4291469 8.95089124,16.7251562 C9.5666636,15.8212177 10.2306443,15.1968385 11.3099221,14.4079817 C11.4552871,14.3017328 11.5663219,14.2220193 11.8405981,14.0262142 C12.688555,13.4148223 12.8664102,13.2835078 13.2671584,12.9600922 L13.5007269,12.7714778 C15.4657648,11.1902985 16.0827196,10.4054647 17.1382738,7.68797605 C17.5118043,6.72427343 17.7210115,6.01030898 18.1049713,4.51823794 C18.7266049,2.0862657 19.0123165,1.46707924 20.0749358,1.27515138 C21.050799,1.09208918 21.768429,1.78121656 22.5681548,3.28971194 C23.4604529,4.98013679 22.9051993,8.43980821 21.1030393,11.8083372 C20.2663728,13.37784 20.1271175,14.5863676 20.5975156,15.4503829 C21.1213524,16.4073498 22.3777752,17.0092997 24.532372,17.2287067 C24.9786193,17.2757197 25.4144698,17.3003462 26.3188976,17.337046 C30.9738159,17.5363428 32.7501953,18.0872299 32.7501953,20.3711573 C32.7501953,21.3589925 32.505512,21.8606696 31.8522751,22.6217703 C31.7519773,22.7402952 31.720547,22.7778629 31.6732469,22.8367101 C31.3586512,23.2281062 31.2201411,23.5343213 31.213425,23.9621715 C31.204863,24.4197401 31.3193941,24.6884414 31.5735992,24.9697175 C31.6233789,25.0247983 31.6600117,25.0621453 31.7638214,25.1653583 C31.8300849,25.230289 31.8635804,25.2636366 31.9031634,25.3049728 C32.3423297,25.7635905 32.4979229,26.253213 32.4185523,27.0726945 C32.2945049,28.3826525 31.8931434,28.9248253 30.969158,29.4651272 C30.5440667,29.7131193 30.4091307,29.8458502 30.3686172,30.0825477 C30.2959679,30.5120756 30.3737038,30.764873 30.6034408,31.0739645 C30.6374548,31.1197274 30.6635911,31.1529683 30.7324887,31.2390634 C31.1921894,31.8084637 31.3367827,32.1980669 31.2499621,32.9961785 C31.1659622,33.7484823 30.9479332,34.0833432 30.401973,34.5100382 C30.2779199,34.6088744 30.2247836,34.6530384 30.1632489,34.7104864 C29.9083851,34.9484236 29.7739192,35.2067547 29.7378845,35.6657031 C29.7135533,35.9430622 29.7252962,36.1349773 29.7755358,36.5229335 C29.8705039,37.2535999 29.8399059,37.6813976 29.5570156,38.4867458 C29.0795402,39.8460502 27.629086,40.1553699 23.0433977,40.0611286 C22.3795339,40.0477524 21.7444886,40.0388723 21.1334,40.0344336 Z" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg></button>
+					<button class="thumb thumb-down"><svg width="100%" height="100%" viewBox="0 0 34 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M21.1334,40.0344336 L21.1323966,40.0344256 C15.9572291,39.9899108 13.9114176,39.7127631 10.9459171,38.2588016 C6.72320136,36.1884374 4.7682668,35.8231657 3.40837849,36.2047375 C3.3592638,36.2185186 3.32142401,36.22968 3.29222438,36.2357757 C3.21112527,36.2675855 3.1137127,36.2973032 3.03213342,36.3150799 L2.60662684,36.407801 L2.31517319,36.0842152 C1.4810202,35.1580983 1.02520694,30.2921887 1.36301421,25.7438928 C1.56576937,23.0033161 2.00198174,21.3215689 2.52738106,20.7643136 L2.7932753,20.4822977 L3.17712605,20.5360689 L3.31550715,20.5555326 C4.22302116,20.6960422 4.54235861,20.658501 5.66200204,20.1859414 C6.5663511,19.8023815 7.79240412,18.4291469 8.95089124,16.7251562 C9.5666636,15.8212177 10.2306443,15.1968385 11.3099221,14.4079817 C11.4552871,14.3017328 11.5663219,14.2220193 11.8405981,14.0262142 C12.688555,13.4148223 12.8664102,13.2835078 13.2671584,12.9600922 L13.5007269,12.7714778 C15.4657648,11.1902985 16.0827196,10.4054647 17.1382738,7.68797605 C17.5118043,6.72427343 17.7210115,6.01030898 18.1049713,4.51823794 C18.7266049,2.0862657 19.0123165,1.46707924 20.0749358,1.27515138 C21.050799,1.09208918 21.768429,1.78121656 22.5681548,3.28971194 C23.4604529,4.98013679 22.9051993,8.43980821 21.1030393,11.8083372 C20.2663728,13.37784 20.1271175,14.5863676 20.5975156,15.4503829 C21.1213524,16.4073498 22.3777752,17.0092997 24.532372,17.2287067 C24.9786193,17.2757197 25.4144698,17.3003462 26.3188976,17.337046 C30.9738159,17.5363428 32.7501953,18.0872299 32.7501953,20.3711573 C32.7501953,21.3589925 32.505512,21.8606696 31.8522751,22.6217703 C31.7519773,22.7402952 31.720547,22.7778629 31.6732469,22.8367101 C31.3586512,23.2281062 31.2201411,23.5343213 31.213425,23.9621715 C31.204863,24.4197401 31.3193941,24.6884414 31.5735992,24.9697175 C31.6233789,25.0247983 31.6600117,25.0621453 31.7638214,25.1653583 C31.8300849,25.230289 31.8635804,25.2636366 31.9031634,25.3049728 C32.3423297,25.7635905 32.4979229,26.253213 32.4185523,27.0726945 C32.2945049,28.3826525 31.8931434,28.9248253 30.969158,29.4651272 C30.5440667,29.7131193 30.4091307,29.8458502 30.3686172,30.0825477 C30.2959679,30.5120756 30.3737038,30.764873 30.6034408,31.0739645 C30.6374548,31.1197274 30.6635911,31.1529683 30.7324887,31.2390634 C31.1921894,31.8084637 31.3367827,32.1980669 31.2499621,32.9961785 C31.1659622,33.7484823 30.9479332,34.0833432 30.401973,34.5100382 C30.2779199,34.6088744 30.2247836,34.6530384 30.1632489,34.7104864 C29.9083851,34.9484236 29.7739192,35.2067547 29.7378845,35.6657031 C29.7135533,35.9430622 29.7252962,36.1349773 29.7755358,36.5229335 C29.8705039,37.2535999 29.8399059,37.6813976 29.5570156,38.4867458 C29.0795402,39.8460502 27.629086,40.1553699 23.0433977,40.0611286 C22.3795339,40.0477524 21.7444886,40.0388723 21.1334,40.0344336 Z" stroke="#000000" stroke-width="1.5" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  </section>
+    </main>
+
+
+<footer id="footer" data-turbolinks-permanent>
+  <div class="grid-container">
+    <div class="row">
+      <div class="col-mobile-14 col-mobile-offset-1 col-tablet-17 col-tablet-offset-1 col-small-desktop-16 col-small-desktop-offset-2 col-desktop-16 col-desktop-offset-2 links-and-copyright">
+        <ul role="menu" class="footer-items">
+          <li class="item" role="none">
+            <a href="/about/" data-label="About Coral"
+ class="cta-primary-body color--white item-link" role="menuitem">About Coral</a>
+          </li>
+          <li class="item" role="none">
+            <a href="/news/" data-label="News"
+ class="cta-primary-body color--white item-link" role="menuitem">News</a>
+          </li>
+          <li class="item" role="none">
+            <a href="https://www.blog.google/technology/ai/ai-principles/" data-label="Google AI principles"
+               target="_blank" rel="noopener"
+ class="cta-primary-body color--white item-link" role="menuitem">Google AI principles</a>
+          </li>
+          <li class="item" role="none">
+            <a href="https://policies.google.com/terms?hl=en" data-label="Terms of service"
+               target="_blank" rel="noopener"
+ class="cta-primary-body color--white item-link" role="menuitem">Terms of service</a>
+          </li>
+          <li class="item" role="none">
+            <a href="https://policies.google.com/privacy?hl=en" data-label="Privacy policy"
+               target="_blank" rel="noopener"
+ class="cta-primary-body color--white item-link" role="menuitem">Privacy policy</a>
+          </li>
+          <li class="item" role="none">
+            <a href="/docs/" data-label="Documentation"
+ class="cta-primary-body color--white item-link" role="menuitem">Documentation</a>
+          </li>
+          <li class="item" role="none">
+            <a href="/projects/" data-label="Projects"
+ class="cta-primary-body color--white item-link" role="menuitem">Projects</a>
+          </li>
+          <li class="item" role="none">
+            <a href="/support/" data-label="Support"
+ class="cta-primary-body color--white item-link" role="menuitem">Support</a>
+          </li>
+          <li class="item" role="none">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0t-I4y0AS4Ymph9SRY3Gr9ppZsgE_LZ2A8_vMa7K_Do4ZQA/viewform" data-label="Contact sales"
+               target="_blank" rel="noopener"
+ class="cta-primary-body color--white item-link" role="menuitem">Contact sales</a>
+          </li>
+          <li class="item" role="none">
+            <a href="/legal/" data-label="Legal"
+ class="cta-primary-body color--white item-link" role="menuitem">Legal</a>
+          </li>
+        </ul>
+        <div class="copyright-container row">
+          <div class="col-mobile-16 col-tablet-28">
+            <div class="logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" width="260" height="88">
+    <path d="M33 40.24v-8.75h30.48c.32 1.6.48 3.55.48 5.63 0 6.72-1.84 15.04-7.76 20.96-5.76 6-13.12 9.2-22.88 9.2C15.24 67.28.04 52.56.04 34.48s15.2-32.8 33.28-32.8c10 0 17.12 3.92 22.48 9.04l-6.32 6.32c-3.84-3.6-9.04-6.4-16.16-6.4-13.2 0-23.52 10.64-23.52 23.84s10.32 23.84 23.52 23.84c8.56 0 13.44-3.44 16.56-6.56 2.56-2.56 4.28-6.48 4.92-11.52H33zm76.7 5.92c0 12.16-9.52 21.12-21.2 21.12s-21.2-8.96-21.2-21.12c0-12.24 9.52-21.12 21.2-21.12s21.2 8.88 21.2 21.12zm-9.28 0c0-7.6-5.52-12.8-11.92-12.8s-11.92 5.2-11.92 12.8c0 7.52 5.52 12.8 11.92 12.8s11.92-5.28 11.92-12.8zm55.28 0c0 12.16-9.52 21.12-21.2 21.12s-21.2-8.96-21.2-21.12c0-12.24 9.52-21.12 21.2-21.12s21.2 8.88 21.2 21.12zm-9.28 0c0-7.6-5.52-12.8-11.92-12.8s-11.92 5.2-11.92 12.8c0 7.52 5.52 12.8 11.92 12.8s11.92-5.28 11.92-12.8zm53.39-19.84v37.92c0 15.6-9.2 22-20.08 22-10.24 0-16.4-6.88-18.72-12.48l8.08-3.36c1.44 3.44 4.96 7.52 10.64 7.52 6.96 0 11.28-4.32 11.28-12.4v-3.04h-.32c-2.08 2.56-6.08 4.8-11.12 4.8-10.56 0-20.24-9.2-20.24-21.04 0-11.92 9.68-21.2 20.24-21.2 5.04 0 9.04 2.24 11.12 4.72h.32v-3.44h8.8zm-8.16 19.92c0-7.44-4.96-12.88-11.28-12.88-6.4 0-11.76 5.44-11.76 12.88 0 7.36 5.36 12.72 11.76 12.72 6.32 0 11.28-5.36 11.28-12.72zM215.29 4v62h-9.28V4h9.28zm35.9 49.12l7.2 4.8c-2.32 3.44-7.92 9.36-17.6 9.36-12 0-20.96-9.28-20.96-21.12 0-12.56 9.04-21.12 19.92-21.12 10.96 0 16.32 8.72 18.08 13.44l.96 2.4-28.24 11.68c2.16 4.24 5.52 6.4 10.24 6.4 4.72 0 8-2.32 10.4-5.84zm-22.16-7.6l18.88-7.84c-1.04-2.64-4.16-4.48-7.84-4.48-4.72 0-11.28 4.16-11.04 12.32z"/>
+</svg>            </div>
+            <p class="color--white copyright">Copyright 2019 Google LLC. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-mobile-14 col-mobile-offset-1 col-tablet-10 col-tablet-offset-3 col-small-desktop-9 col-small-desktop-offset-3 col-desktop-7 col-desktop-offset-5 newsletter-form">
+        <form>
+          <h2>Stay up-to-date</h2>
+          <p>Sign up to receive our newsletter</p>
+          <input type="text" placeholder="Name" name="name" />
+          <div class="error-message name">
+<svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></defs><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ic/error_outline" transform="translate(-2 -2)"><g id="ic_error_outline_24px" transform="translate(2 2)"><mask id="mask-15" fill="#fff"><use xlink:href="#path-1"/></mask><g id="🎨-Color" mask="url(#mask-15)" fill="#FFA700"><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></g></g></g></g></svg><span></span>
+          </div>
+          <input type="text" placeholder="Company (optional)" name="company" />
+          <input type="text" placeholder="Email" name="email" />
+          <div class="error-message email">
+<svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></defs><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ic/error_outline" transform="translate(-2 -2)"><g id="ic_error_outline_24px" transform="translate(2 2)"><mask id="mask-15" fill="#fff"><use xlink:href="#path-1"/></mask><g id="🎨-Color" mask="url(#mask-15)" fill="#FFA700"><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></g></g></g></g></svg><span></span>
+          </div>
+          <div class="terms-checkbox">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms">I accept Google's <a href="//www.google.com/intl/en/policies/terms/" target="_blank">Terms and Conditions</a> and acknowledge that my information will be used in accordance with Google's <a href="//www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a>.</label>
+          </div>
+
+
+
+
+    <a href="#/" data-turbolinks="false"       class="cta 
+ 
+ 
+                   form-send-cta bg-color--ice " target="_blank" rel="noopener">
+
+	<span>Subscribe</span>
+
+    </a>
+          <div class="return-message">
+            <div class="success"><svg viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-5-5h64v64H-5V-5zm0 0h64v64H-5V-5z"/><path d="M39.725 15.698L22.152 33.272l-9.574-9.547-3.76 3.76 13.334 13.333 21.333-21.333-3.76-3.787zM27.485.818C12.765.818.818 12.765.818 27.485c0 14.72 11.947 26.667 26.667 26.667 14.72 0 26.667-11.947 26.667-26.667 0-14.72-11.947-26.667-26.667-26.667zm0 48c-11.787 0-21.333-9.546-21.333-21.333 0-11.787 9.546-21.333 21.333-21.333 11.787 0 21.333 9.546 21.333 21.333 0 11.787-9.546 21.333-21.333 21.333z" fill="#25B6BB" fill-rule="nonzero"/></g></svg></div>
+            <div class="error"><svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></defs><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="ic/error_outline" transform="translate(-2 -2)"><g id="ic_error_outline_24px" transform="translate(2 2)"><mask id="mask-15" fill="#fff"><use xlink:href="#path-1"/></mask><g id="🎨-Color" mask="url(#mask-15)" fill="#FFA700"><path d="M9 13h2v2H9v-2zm0-8h2v6H9V5zm.99-5C4.47 0 0 4.48 0 10s4.47 10 9.99 10C15.52 20 20 15.52 20 10S15.52 0 9.99 0zM10 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" id="path-1"/></g></g></g></g></svg></div>
+            <span>You are subscribed! Thanks!</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<section class="image-expanded-component">
+
+  <div class="modal">
+    <img class="image-expanded" />
+    <a href="#" class="close-modal image-expanded-close">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Close Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="08---Product-Distributors" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Coral-Product-Distributors-Modal---1440px_@2x" transform="translate(-838.000000, -387.000000)" fill="#4a4a4a">
+            <g id="Modal" transform="translate(548.000000, 348.000000)">
+                <polygon id="Close-Icon" points="309 40.9127517 301.412752 48.5 309 56.0872483 307.087248 58 299.5 50.4127517 291.912752 58 290 56.0872483 297.587248 48.5 290 40.9127517 291.912752 39 299.5 46.5872483 307.087248 39"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>    </a>
+  </div>
+
+</section>
+      <script defer src="/static/output/main.min.js?cache=90caf05"></script>
+
+
+  </body>
+</html>
+
 # What is this?
 
 This is the Linux kernel IIO drivers for the sensors used in the Coral
