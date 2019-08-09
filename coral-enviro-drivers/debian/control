@@ -1,0 +1,13 @@
+Source: coral-enviro-drivers-dkms
+Section: misc
+Priority: optional
+Maintainer: Coral <coral-support@google.com>
+Build-Depends: debhelper (>= 10), dkms
+Standards-Version: 4.0.0
+
+Package: coral-enviro-drivers-dkms
+Architecture: all
+Depends: dkms (>= 1.95), raspberrypi-kernel-headers | linux-headers, ${misc:Depends}
+Breaks: linux-kbuild-3.6, linux-headers-3.6-trunk-common
+Description: Coral Environmental Sensor Board DKMS drivers.
+ Required drivers for the Environmental Sensor Board.

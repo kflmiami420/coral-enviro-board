@@ -1,0 +1,40 @@
+coral-enviro-drivers-dkms (1.5) stable; urgency=medium
+
+  * Add a Breaks: line for Pi's 3.6 headers
+  * Install bmp280 as bmp280-coral to resolve conflict on Pi
+  * Revert: Enforce linux-headers version (>=4.9)
+
+ -- Coral <coral-support@google.com>  Fri, 21 Jun 2019 13:03:38 -0700
+
+coral-enviro-drivers-dkms (1.4) stable; urgency=medium
+
+  * Add of_match tables for bmp280 and hdc20x0
+  * Wrap struct iio_info.driver_module in version check
+  * Enforce linux-headers version (>=4.9)
+
+ -- Coral <coral-support@google.com>  Tue, 21 May 2019 15:17:40 +0200
+
+coral-enviro-drivers-dkms (1.3) stable; urgency=medium
+
+  * Add tla202x to i2c_device_id table of ti-ads1015
+
+ -- Coral <coral-support@google.com>  Tue, 14 May 2019 12:34:40 -0700
+
+coral-enviro-drivers-dkms (1.2) stable; urgency=medium
+
+  * Upgrade drivers (ADS1015 and OPT3001) to mainline.
+  * Add support for processed info channel in hdc20x0 driver.
+
+ -- Coral <coral-support@google.com>  Tue, 09 Apr 2019 11:58:23 -0700
+
+coral-enviro-drivers-dkms (1.1) stable; urgency=medium
+
+  * Add support for HDC20x0.
+
+ -- Coral <coral-support@google.com>  Wed, 03 Apr 2019 17:12:41 -0700
+
+coral-enviro-drivers-dkms (1.0) stable; urgency=medium
+
+  * Proper debian package based on dh_dkms.
+
+ -- Coral <coral-support@google.com>  Wed, 03 Apr 2019 15:34:12 -0700
