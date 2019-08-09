@@ -1,0 +1,20 @@
+Source: coral-enviro
+Maintainer: Coral <coral-support@google.com>
+Section: python
+Priority: optional
+Build-Depends: dh-python, python3-setuptools, python3-all, debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://coral.withgoogle.com/
+
+Package: python3-coral-enviro
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-coral-cloudiot,
+         python3-luma-oled (>= 2.3.2),
+         python3-spidev,
+         coral-enviro-drivers-dkms,
+         python3-rpi.gpio | python3-periphery
+Description: Coral Environmental Sensor Board Library
+ Library and API to enable the Coral Environmental Sensor Board.
+
