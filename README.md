@@ -1,3 +1,73 @@
+This may seem overkill, but it works for me:
+
+install completely fresh latest raspbian to an sd card
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+sudo reboot
+sudo echo "deb https://packages.cloud.google.com/apt coral-cloud-stable main" | sudo tee /etc/apt/sources.list.d/coral-cloud.list
+sudo curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo apt install python3-coral-enviro
+sudo reboot now
+
+time to prove to yourself the hat works
+sudo python3 enviro_demo.py
+
+I now had a board working with all four readings, but without being part of the IOT platform, so I edited /usr/lib/python3/dist-packages/coral/envirocloud_config.ini to match my account details but leaving the encryption empty as suggested in the file. At this stage I was unable to get enviro_demo.py to run - it crashed out with the error @bryoneason was seeing at the top of this thread where the onboard crypto call in core.py was complaining about a file not found.
+
+To get around that, I did the following:
+
+cd /usr/lib/python3/dist-packages/coral/enviro
+sudo wget https://pki.goog/roots.pem
+sudo openssl genrsa -out rsa_private.pem 2048
+sudo openssl rsa -in rsa_private.pem -pubout -out rsa_public.pem
+sudo vi cloud_config.ini 
+sudo vi cloud_config.ini <set all other variables to match all the rest of your gcloud settings, region etc>
+
+time to prove to yourself everything works
+sudo python3 enviro_demo.py
+
+For me, I now have a pi, connected to the internet over my local wifi, connected to my gcp account, using the encryption keys I created, which has been running for days, all the way through pubsub and dataflow to bigquery. It has inserted tens of thousands of rows successfully.
+
+*NB, if you want to do the same thing as a semi-tutorial (accepting i'm hardly a good tutor of anything) you'll need to:
+
+enable apis for pubsub, dataflow, bigquery and storage first, then:
+
+go to the IOT dashboard, create a new registry (remember the region), create a new device and make sure to add the public key you created above.
+
+go to the pubsub dashboard, create a new topic, then create a new subscription (delivery type set to pull) for that topic
+
+go back to the topic screen, select your topic, and from the dropdown select 'export to bigquery'
+
+now over in the dataflow dashboard, give the flow a name, change the Cloud Dataflow Template from 'topic to bigquery' to 'subscription to bigquery', make sure you set the region to match everything else you are doing, and enter the topic you made above
+
+in another tab, go into the bigquery dashboard and create a dataset and a table within that with the following structure:
+
+field name | Type | Mode |
+
+humidity | FLOAT | NULLABLE
+pressure | FLOAT | NULLABLE
+temperature | FLOAT | NULLABLE
+ambient_light | FLOAT | NULLABLE
+
+In another tab go into the Storage Browser, create a bucket and remember its name
+
+Now go back to your half complete dataflow, and fill in the output table name with the details you created above and also enter the name of the storage bucket you created and put it in the Temporary Location field and finally set the flow running
+
+go back to the bigquery dashboard, and in the query editor, you can use this to start to see your data:
+SELECT * FROM <project id>:<dataset>.<table> LIMIT 1000
+
+Alone, without the help of these tutorials:
+
+https://cloud.google.com/community/tutorials/cloud-iot-rtdp
+https://cloud.google.com/community/tutorials/cloud-iot-gateways-rpi
+
+and the fantastic support of coral-support@google.com plus quite a lot of hours of me assuming I was wrong and hacking at things, this does all work very well indeed.
+
+PS - I've probably missed out some steps or oversimplified others, but hopefully all this is of some assistance to someone.
+
+
+
+
+
 <h1 class="normal-size print-break section-headline mk-heading">Environmental Sensor Board datasheet</h1>
     
   </div>
