@@ -95,7 +95,7 @@ Vertical spacing: 23 mm</td>
 </table>
 
 <figure>
-   <img src="/static/docs/images/enviro-board/enviro-dims.png" />
+   <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-dims.png" />
    <figcaption><b>Figure 1.</b> Board and mounting hole dimensions (in millimeters)</figcaption>
 </figure>
 
