@@ -43,7 +43,7 @@ humidity. You can also attach additional sensors with the Grove connectors.</p>
 connect to the device and then collect, process, and analyze the sensor data.</p>
 
 <div class="print-hide link-arrow">
-<p class="body-copy mk-paragraph" ><a class="mk-link" href="/products/environmental/">Purchase info</a>
+<p class="body-copy mk-paragraph" ><a class="mk-link" href="https://www.mouser.com/ProductDetail/Coral/G650-04023-01?qs=vLWxofP3U2zZXdMO1sMwsg%3D%3D">Purchase info from Mouser</a>
 </div>
 
 <div class="print-break"></div>
