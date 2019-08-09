@@ -343,26 +343,7 @@ available to you through the Grove connectors.</p>
           <li class="item" role="none">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0t-I4y0AS4Ymph9SRY3Gr9ppZsgE_LZ2A8_vMa7K_Do4ZQA/viewform" data-label="Contact sales"
                target="_blank" rel="noopener"
- class="cta-primary-body color--white item-link" role="menuitem">Contact sales</a>
-          </li>
-          <li class="item" role="none">
-            <a href="/legal/" data-label="Legal"
- class="cta-primary-body color--white item-link" role="menuitem">Legal</a>
-          </li>
-        </ul>
-        <div class="copyright-container row">
-          <div class="col-mobile-16 col-tablet-28">
-            <div class="logo">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" width="260" height="88">
-    <path d="M33 40.24v-8.75h30.48c.32 1.6.48 3.55.48 5.63 0 6.72-1.84 15.04-7.76 20.96-5.76 6-13.12 9.2-22.88 9.2C15.24 67.28.04 52.56. 18.08 13.44l.96 2.4-28.24 11.68c2.16 4.24 5.52 6.4 10.24 6.4 4.72 0 8-2.32 10.4-5.84zm-22.16-7.6l18.88-7.84c-1.04-2.64-4.16-4.48-7.84-4.48-4.72 0-11.28 4.16-11.04 12.32z"/>
-</svg>            </div>
-            <p class="color--white copyright">Copyright 2019 Google LLC. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-     
-          58 8-8 8z" id="path-1"/></g></g></g></g></svg></div>
-            <span>You are subscribed! Thanks!</span>
+ 
           </div>
         </form>
       </div>
