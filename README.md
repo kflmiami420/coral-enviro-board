@@ -1,9 +1,9 @@
 <h1 class="normal-size print-break section-headline mk-heading">Environmental Sensor Board datasheet</h1>
-    <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-profile-dims.jpg" />
+    
   </div>
 </div>
 
-<p class="body-copy mk-paragraph" ><img src="/static/docs/images/enviro-board/enviro-profile-dims.jpg"
+<p class="body-copy mk-paragraph" ><img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-profile-dims.jpg"
    class="attempt-right print-hide" style="max-width:430px" />
 
 <h2 class="normal-size print-break section-headline mk-heading">Features</h2>
@@ -169,7 +169,7 @@ The VDD_A pin on the analog Grove connector can be powered by either the 5V or 3
 rail by the jumper pins indicated in figure 2 as the ANALOG VDD JUMPER.</div>
 
 <figure>
-   <img src="/static/docs/images/enviro-board/enviro-grove-callouts.png" style="max-width:600px" />
+   <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-grove-callouts.png" style="max-width:600px" />
    <figcaption><b>Figure 2.</b> Pin functions for each Grove connector</figcaption>
 </figure>
 
@@ -236,7 +236,7 @@ for the corresponding functions), while the pins in light green are used by the 
 available to you through the Grove connectors.</p>
 
 <figure>
-   <img src="/static/docs/images/enviro-board/enviro-pinout.png" style="max-width:600px" />
+   <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-pinout.png" style="max-width:600px" />
    <figcaption><b>Figure 3.</b> Pins used by the board</figcaption>
 </figure>
 
