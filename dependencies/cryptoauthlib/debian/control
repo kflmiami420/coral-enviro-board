@@ -1,0 +1,36 @@
+Source: cryptoauthlib
+Maintainer: Microchip Technology Inc <support@microchip.com>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all-dev, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-cryptoauthlib
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Description: Python Wrapper Library for Microchip Security Products
+ # Python CryptoAuthLib module
+ .
+ ## Introduction
+ This module provides a thin python ctypes layer to evaluate the cryptoauthlib
+ interface to Microchip CryptoAuthentication devices.
+ .
+ ### Code Examples
+ Code examples for python are available on github as part of
+ [CryptoAuthTools](https://github.com/MicrochipTech/cryptoauthtools)
+ under the [python/examples](https://github.com/MicrochipTech/cryptoauthtools/tree/master/python/examples)
+ directory
+ .
+ .
+ ## Installation
+ ### CryptoAuthLib python module can be installed through Python's pip tool:
+ ```
+     pip install cryptoauthlib
+ ```
+ .
+ ### To upgrade your installation when new releases are made:
+

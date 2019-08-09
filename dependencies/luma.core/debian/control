@@ -1,0 +1,36 @@
+Source: luma-core
+Maintainer: Richard Hull <richard.hull@destructuring-bind.org>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-luma-core
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-smbus2, python3-pil (>= 4.0.0)
+Description: A component library to support SBC display drivers
+ luma.core **|** 
+ `luma.docs <https://github.com/rm-hull/luma.docs>`__ **|** 
+ `luma.emulator <https://github.com/rm-hull/luma.emulator>`__ **|** 
+ `luma.examples <https://github.com/rm-hull/luma.examples>`__ **|** 
+ `luma.lcd <https://github.com/rm-hull/luma.lcd>`__ **|** 
+ `luma.led_matrix <https://github.com/rm-hull/luma.led_matrix>`__ **|** 
+ `luma.oled <https://github.com/rm-hull/luma.oled>`__ 
+ .
+ Luma.Core
+ =========
+ .
+ .. image:: https://travis-ci.org/rm-hull/luma.core.svg?branch=master
+    :target: https://travis-ci.org/rm-hull/luma.core
+ .
+ .. image:: https://coveralls.io/repos/github/rm-hull/luma.core/badge.svg?branch=master
+    :target: https://coveralls.io/github/rm-hull/luma.core?branch=master
+ .
+ .. image:: https://requires.io/github/rm-hull/luma.core/requirements.svg?branch=master
+    :target: https://requires.io/github/rm-hull/luma.core/requirements/?branch=master
+ .
+

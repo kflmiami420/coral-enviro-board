@@ -1,0 +1,36 @@
+Source: luma-oled
+Maintainer: Richard Hull <richard.hull@destructuring-bind.org>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-luma-oled
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-luma-core
+Description: A small library to drive an OLED device with either SSD1306,
+ `luma.core <https://github.com/rm-hull/luma.core>`__ **|** 
+ `luma.docs <https://github.com/rm-hull/luma.docs>`__ **|** 
+ `luma.emulator <https://github.com/rm-hull/luma.emulator>`__ **|** 
+ `luma.examples <https://github.com/rm-hull/luma.examples>`__ **|** 
+ `luma.lcd <https://github.com/rm-hull/luma.lcd>`__ **|** 
+ `luma.led_matrix <https://github.com/rm-hull/luma.led_matrix>`__ **|** 
+ luma.oled
+ .
+ Luma.OLED
+ ---------
+ **Display drivers for SSD1306 / SSD1309 / SSD1322 / SSD1325 / SSD1327 / SSD1331 / SSD1351 / SH1106**
+ .
+ .. image:: https://travis-ci.org/rm-hull/luma.oled.svg?branch=master
+    :target: https://travis-ci.org/rm-hull/luma.oled
+ .
+ .. image:: https://coveralls.io/repos/github/rm-hull/luma.oled/badge.svg?branch=master
+    :target: https://coveralls.io/github/rm-hull/luma.oled?branch=master
+ .
+ .. image:: https://readthedocs.org/projects/luma-oled/badge/?version=latest
+    :target: http://luma-oled.readthedocs.io/en/latest/?badge=latest
+

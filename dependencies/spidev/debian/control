@@ -1,0 +1,36 @@
+Source: spidev
+Maintainer: Stephen Caudle <scaudle@doceme.com>
+Section: python
+Priority: optional
+Build-Depends: python3-all-dev, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-spidev
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, ${shlibs:Depends}
+Description: Python bindings for Linux SPI access through spidev
+ Python Spidev
+ =============
+ .
+ This project contains a python module for interfacing with SPI devices from user space via the spidev linux kernel driver.
+ .
+ All code is MIT licensed unless explicitly stated otherwise.
+ .
+ Usage
+ -----
+ .
+ ```python
+ import spidev
+ spi = spidev.SpiDev()
+ spi.open(bus, device)
+ to_send = [0x01, 0x02, 0x03]
+ spi.xfer(to_send)
+ ```
+ Settings
+ --------
+ .
+

@@ -1,0 +1,36 @@
+Source: smbus2
+Maintainer: Karl-Petter Lindegaard <kp.lindegaard@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-smbus2
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: smbus2 is a drop-in replacement for smbus-cffi/smbus-python
+ smbus2
+ ======
+ A drop-in replacement for smbus-cffi/smbus-python in pure Python
+ .
+ |travis| |rtfd|
+ .
+ .. |travis| image:: https://travis-ci.org/kplindegaard/smbus2.svg?branch=master
+      :target: https://travis-ci.org/kplindegaard/smbus2
+ .
+ .. |rtfd| image:: https://readthedocs.org/projects/smbus2/badge/?version=latest
+      :target: http://smbus2.readthedocs.io/en/latest/?badge=latest
+      :alt: Documentation Status
+ .
+ Introduction
+ ============
+ .
+ smbus2 is (yet another) pure Python implementation of the `python-smbus <http://www.lm-sensors.org/browser/i2c-tools/trunk/py-smbus/>`_ package.
+ .
+ It was designed from the ground up with two goals in mind:
+ .
+

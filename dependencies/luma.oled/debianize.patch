@@ -1,0 +1,12 @@
+diff --git a/luma/__init__.py b/luma/__init__.py
+deleted file mode 100644
+index 0ef6532..0000000
+--- a/luma/__init__.py
++++ /dev/null
+@@ -1,6 +0,0 @@
+-# -*- coding: utf-8 -*-
+-# Copyright (c) 2014-18 Richard Hull and contributors
+-# See LICENSE.rst for details.
+-
+-from pkgutil import extend_path
+-__path__ = extend_path(__path__, __name__)

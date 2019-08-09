@@ -1,0 +1,36 @@
+Source: paho-mqtt
+Maintainer: Roger Light <roger@atchoo.org>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all, debhelper (>= 7)
+Standards-Version: 3.9.1
+
+
+
+
+
+Package: python3-paho-mqtt
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: MQTT version 3.1.1 client class
+ Eclipse Paho™ MQTT Python Client
+ ================================
+ .
+ This document describes the source code for the `Eclipse Paho <http://eclipse.org/paho/>`_ MQTT Python client library, which implements versions 3.1 and 3.1.1 of the MQTT protocol.
+ .
+ This code provides a client class which enable applications to connect to an `MQTT <http://mqtt.org/>`_ broker to publish messages, and to subscribe to topics and receive published messages. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
+ .
+ It supports Python 2.7.9+ or 3.4+, with limited support for Python 2.7 before 2.7.9.
+ .
+ The MQTT protocol is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. Designed as an extremely lightweight publish/subscribe messaging transport, it is useful for connections with remote locations where a small code footprint is required and/or network bandwidth is at a premium.
+ .
+ Paho is an `Eclipse Foundation <https://www.eclipse.org/org/foundation/>`_ project.
+ .
+ .
+ Contents
+ --------
+ .
+ * Installation_
+ * `Known limitations`_
+ * `Usage and API`_
+
