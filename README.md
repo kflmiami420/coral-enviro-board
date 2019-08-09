@@ -1,5 +1,5 @@
 
-    <img src="/static/docs/images/enviro-board/enviro-profile-dims.jpg" />
+    <img src="https://coral.withgoogle.com/static/docs/images/enviro-board/enviro-profile-dims.jpg" />
   </div>
 </div>
 
